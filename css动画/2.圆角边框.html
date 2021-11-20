@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圆角边框</title>
+    <style>
+      #box1 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid blue;
+        /* 设置圆角 完整格式 2个参数（水平垂直）8个值（顺时针方向）*/
+        /* border-radius: 10px 20px 30px 40px / 10px 20px 30px 40px; */
+        /* 圆角的形成 */
+        /* 
+            1.从指定角地顶端向内部引出垂直半径与水平半径
+            2.将水平半径和垂直半径相交于元素内部的一点（圆心）
+            3.以该点为圆心，指定的垂直半径和水平半径画园或者椭圆
+            4.与边框相交的部分就是圆角部分
+            */
+        /* 设置圆角 1个参数（水平垂直）4个值（顺时针方向）*/
+        /* border-radius: 10px 20px 30px 40px;*/
+        /* 设置圆角 1个参数2个值（左上角和右下角地水平位置、右上角和左下角的水平位置）*/
+        /* border-radius: 10px 20px; */
+        /* 设置圆角 1个参数1个值（四个角的水平和垂直位置）*/
+        /* border-radius: 10px; */
+        border-radius: 10px / 20px 30px;
+      }
+      #box2 {
+        width: 200px;
+        height: 200px;
+        border: 1px saddlebrown solid;
+        border-radius: 10px 10px 0 0;
+      }
+      #box3 {
+        width: 200px;
+        height: 400px;
+        border: 1px sandybrown solid;
+        border-radius: 0 0 10px 10px;
+      }
+      #box4 {
+        width: 200px;
+        height: 200px;
+        border: 1px blue solid;
+        border-radius: 100px;
+      }
+      #box5 {
+        width: 100px;
+        height: 200px;
+        border: 1px rebeccapurple solid;
+        border-radius: 100px;
+        border-left: 100px blue solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子阴影</title>
+    <style>
+      #box1 {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        /* box-shadow: 2px 2px 2px red; */
+        /* box-shadow: 0px 0px 5px 10px red; */
+        box-shadow: 2px 2px 5px inset blue;
+      }
+      #box2 {
+        width: 100px;
+        height: 40px;
+        background: darkgoldenrod;
+        margin: 50px auto;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px black;
+       
+      }
+      #box2 :hover {
+        opacity: 0.6;
+        color: gold !important;
+        cursor: pointer;
+      }
+      #box3 {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+        border-radius: 100px;
+        border: 1px solid rebeccapurple;
+        box-shadow: 0px 0px 5px 5px red, 0px 0px 5px 10px orange,
+          0px 0px 5px 15px yellow, 0px 0px 5px 20px green,
+          0px 0px 5px 25px lightblue, 0px 0px 5px 30px blue,
+          0px 0px 5px 35px purple;
+      }
+      /* 
+      盒子阴影
+      格式：box-shadow:阴影1,阴影2
+      阴影的格式：
+        水平偏移位置 垂直偏移位置 模糊度 外沿值 内置阴影
+      */
+    </style>
+  </head>
+  <body>
+    <div id="box1"></div>
+    <div id="box2">按钮</div>
+    <div id="box3"></div>
+  </body>
+</html>
