@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform3D</title>
+    <style>
+        #parent {
+            width: 200px;
+            height: 200px;
+            background: pink;
+            margin: 100px auto;
+            perspective: 400px;
+        }
+
+        /* 
+        perspective 透视（呈现出伪3D效果）
+        */
+        #son {
+            width: 100%;
+            height: 100%;
+            background: black;
+            /* z轴移动 */
+            /* transform: translateZ(-100px); */
+            transform: translate3d(-10px, -10px, -100px);
+            transition: all 1s;
+        }
+
+        #son:hover {
+            transform: perspective(400px) scaleZ(1);
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: blueviolet;
+        }
+        .a {
+
+        }
+        .b {
+            background: pink;
+            transform: perspective(400px) translateZ(-100px);
+        }
+        .c{
+            background: orange;
+            transform: perspective(400px) scale3d(0.8,0.8,0.8) translateZ(-50px) rotateZ(30deg);
+        }
+        body{
+            perspective: 400px;
+        }
+        img{
+            transition: all 3s;
+        }
+        img:hover{
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="parent">
+        <div id="son">
+
+        </div>
+    </div -->
+    <!-- <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div> -->
+    <img src="./img/logo.jfif" alt="">
+</body>
+
+</html>

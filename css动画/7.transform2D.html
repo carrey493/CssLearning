@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform 2D</title>
+    <style>
+        #box1 {
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            border: 1px solid black;
+        }
+
+        #box1:hover {
+            /* margin-top: 110px; */
+            /* 
+            水平和垂直方向移动函数：translate 支持一个参数 代表水平移动
+            */
+            /* transform: translate(30px); */
+            transform: translate(30px, 50px);
+        }
+
+        #box2 {
+            width: 200px;
+            height: 500px;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+        }
+
+        #box2:hover {
+            /* transform: translate(0px, -50px);
+            box-shadow: 0 0 5px 5px khaki; */
+            /* 
+            旋转
+                支持一个参数 旋转角度 单位 deg
+            */
+            /* transform: rotate(90deg); */
+            /*
+            缩放
+                支持两个参数 代表水平方向和垂直方向的缩放
+                也支持一个参数 水平和垂直同比例缩放
+             */
+            transform: scale(2, 0.5);
+        }
+
+        #box3 {
+            width: 600px;
+            height: 300px;
+            border: 1px solid orange;
+            background: url('./img/logo.jfif') no-repeat;
+            transition: all 1s;
+        }
+        #box3>div{
+            float: left;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        #box3:hover{
+            transform: scale(1.2);
+        }
+        #box4 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid hotpink;
+            margin: 100px auto;
+        }
+        #box4:hover {
+            /* 
+            倾斜
+            支持两个参数 代表水平方向和垂直方向的倾斜
+            也支持一个参数 水平和垂直同比例倾斜
+            */
+            transform: skew(40deg,30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="box1"></div> -->
+    <!-- <div id="box2"></div> -->
+    <!-- <div id="box3">
+        <div>
+            <span>1</span>
+            <p>11111</p>
+        </div>
+        <div>
+            <span>2</span>
+            <p>22222</p>
+        </div>
+        <div>
+            <span>3</span>
+            <p>33333</p>
+        </div>
+        <div>
+            <span>4</span>
+            <p>44444</p>
+        </div>
+
+    </div> -->
+    <div id="box4"></div>
+</body>
+
+</html>

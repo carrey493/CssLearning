@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #banner{
+            width: 600px;
+            height: 350px;
+            border: 1px solid fuchsia;
+            overflow: hidden;
+        }
+        #box {
+            width: 2400px;
+            /* 
+            加入动画
+                动画名字
+                动画完成时间
+                动画执行次数
+                动画延时执行时间
+                (
+                    动画执行函数
+                )
+            */
+            animation: myname 10s infinite 1s alternate;
+        }
+        #box:hover{
+            /* 动画暂停属性 */
+            animation-play-state: paused;
+        }
+        #box>img {
+            float: left;
+        }
+        @keyframes myname{
+            35%{
+                margin-left: -600px;
+            }
+            70%{
+                margin-left: -1200px;
+            }
+            100% {
+                margin-left: -1800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <div id="box">
+            <img src="./img/logo.jfif" alt="">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/logo.jfif" alt="">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

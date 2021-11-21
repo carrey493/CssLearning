@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #box1 {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            /* 过渡属性 过渡时间 过度函数 延时执行时间*/
+            /* transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+            */
+            transition: all 3s linear;
+        }
+
+        #box1:hover {
+            transform: translate(30px,10px);
+            width: 300px;
+            box-shadow: 0px 0px 10px deeppink;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1"></div>
+</body>
+
+</html>
