@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(243, 150, 21);
+            display: grid;
+            margin: 100px auto;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px;
+        }
+
+        .box2 {
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(243, 150, 21);
+            display: grid;
+            margin: 100px auto;
+            grid-template-rows: 20% 30% 50%;
+            grid-template-columns: 100px 100px 100px;
+        }
+
+        .box3 {
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(243, 150, 21);
+            display: grid;
+            margin: 100px auto;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(5, 20%);
+        }
+
+        .box4 {
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(243, 150, 21);
+            display: grid;
+            margin: 100px auto;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(auto-fill, 30%);
+        }
+
+        .box5 {
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(243, 150, 21);
+            display: grid;
+            margin: 100px auto;
+            grid-template-rows: 100px auto 100px;
+            grid-template-columns: auto 100px 100px;
+        }
+
+        .box6 {
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(243, 150, 21);
+            display: grid;
+            margin: 100px auto;
+            grid-template-rows: 1fr 2fr 3fr;
+            grid-template-columns: 100px 100px 100px;
+        }
+
+        .box7 {
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(243, 150, 21);
+            display: grid;
+            margin: 100px auto;
+            grid-template-rows: 100px 100px minmax(100px, 200px);
+            grid-template-columns: 100px 100px 100px;
+        }
+
+        .box8 {
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(243, 150, 21);
+            display: grid;
+            margin: 100px auto;
+            grid-template-rows: 200px 200px minmax(100px, 200px);
+            grid-template-columns: 100px 100px 100px;
+        }
+
+        .box9 {
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(243, 150, 21);
+            display: grid;
+            margin: 100px auto;
+            grid-template-rows: 300px 200px minmax(100px, 200px);
+            grid-template-columns: 100px 100px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 容器 -->
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+</body>
+
+</html>
